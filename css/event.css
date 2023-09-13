@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+
+
+.cards-of-programs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.cards-of-programs ul{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.event-report-card {
+    display: flex;
+    max-width: 60rem;
+    max-height: 35rem;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 4rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+    transition: 0.3s;
+}
+
+
+
+.event-report-card .book-container {
+    height: 20rem;
+}
+
+
+.event-report-card .book-container .content {
+    position: relative;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    transform: translateY(-20rem);
+    transition: 0.3s;
+}
+
+.event-report-card .book-container .content .btn {
+    border: 0.3rem solid white;
+    padding: 1rem 1.5rem;
+    background: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.3em;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.event-report-card .book-container .content .btn:hover {
+    background: white;
+    border: 0px solid white;
+    color: #0a4870;
+}
+
+.event-report-card .programname {
+    flex: 1 0 auto;
+    padding: 2rem;
+    background: #f0f0f0;
+    transform: translateY(19.2rem);
+    transition: 0.3s;
+}
+
+
+.event-report-card .programname .venue {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.event-report-card .programname .venue .icon {
+    margin-right: 1rem;
+}
+
+.event-report-card .programname .more-information {
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.event-report-card .programname .more-information .info-and-date-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.event-report-card .programname .more-information .info-and-date-container .box {
+    flex: 1 0;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    border-radius: 1rem;
+    background: white;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.event-report-card .programname .more-information .info-and-date-container .box .icon {
+    margin-bottom: 0.5rem;
+}
+
+.event-report-card .programname .more-information .info-and-date-container .box.info {
+    color: #ec992c;
+    margin-right: 1rem;
+
+}
+
+.event-report-card .programname .more-information .disclaimer {
+    margin-top: 2rem;
+    font-size: 1.2em;
+    font-weight: 500;
+
+    color: #e13b4a;
+}
+
+
+
+.event-report-card:hover .book-container .content {
+    opacity: 1;
+    transform: translateY(0px);
+    background-color: rgba(135, 207, 235, 0.649);
+}
+
+.event-report-card:hover .programname {
+    transform: translateY(0px);
+}
+
+.event-report-card:hover .programname .more-information {
+    opacity: 1;
+}
+
+.btn:hover {
+    border: 0.5rem solid rgba(10, 72, 112, 0.6) !important;
+    border-radius: 1rem;
+    background-color: #0fefbe !important;
+    color: white !important;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    .event-report-card::before {
+        background: rgba(10, 72, 112, 0.6);
+    }
+
+    .event-report-card:hover .book-container .content {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+    .event-report-card:hover .programname {
+        transform: translateY(0px);
+    }
+
+    .event-report-card .programname .more-information {
+        opacity: 1;
+    }
+    .event-report-card{
+      height: 80vh;
+      width: 95vw;
+      margin: 2rem 0;
+    }
+    .event-report-card h2{
+        font-size: 1.2rem;
+    }
+    .event-report-card p{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 608px) {
+    .event-report-card{
+        margin: 2rem 0;
+        height: 25rem;
+    }
+    .event-report-card h2{
+        font-size: 1rem;
+    }
+    .event-report-card .programname .more-information .info-and-date-container .box {
+        margin: 0;
+        padding: 0.5rem;
+        font-size: 0.6rem;
+    }
+    .event-report-card .programname .more-information .disclaimer{
+        font-size: 0.6rem;
+    }
+    .event-report-card p{
+        font-size: 0.6rem;
+    }
+    .event-report-card i{
+        font-size: 0.6rem;
+    }
+    .event-report-card .programname .venue {
+        margin: 5px 0;
+    }
+    .event-report-card .book-container .content .btn {
+        font-size: 0.8rem;
+        border: 0.2rem solid white;
+    }
+    .event-report-card .programname {
+        transform: translateY(12rem);
+    }
+}
+
+
